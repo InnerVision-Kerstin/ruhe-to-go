@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:ital,wght@0,400;0,700;1,400&display=swap">
 
 </head>
-<body>
+<body style="overflow-x:hidden">
 <style>
   :root {
     color-scheme: light;
@@ -207,11 +207,15 @@
   }
 
 
-  .brandtop{margin:calc(-1 * clamp(28px, 5vw, 62px)) calc(-1 * clamp(16px, 4vw, 36px)) 0;padding:34px 16px 30px;background:linear-gradient(180deg,#A9BDA5 0%,#93AA8F 100%);text-align:center}
+  .brandtop{width:100vw;margin:calc(-1 * clamp(28px, 5vw, 62px)) 0 0 calc(50% - 50vw);padding:34px 16px 30px;background:linear-gradient(180deg,#A9BDA5 0%,#93AA8F 100%);text-align:center}
   .brandtop .nm{color:#fff;font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:13px;margin-bottom:16px}
   .brandtop .lg{display:inline-block;background:#FCF8F2;border-radius:20px;padding:20px 28px 16px;box-shadow:0 8px 26px rgba(40,50,38,.18)}
   .brandtop .lg img{width:220px;max-width:60vw;display:block}
   .ringe{display:none !important}
+  .header-text{max-width:none !important}
+  header h1{font-size:clamp(2rem,5.2vw,3rem);line-height:1.1}
+  header .lede{max-width:60ch}
+  @media (max-width:500px){header h1{font-size:2rem}.brandtop .lg img{width:190px}}
   header{min-height:0 !important}
   .weiter{margin-top:18px;display:flex;flex-direction:column;gap:8px}
   .weiter a{color:var(--rose);font-weight:700}
